@@ -872,10 +872,9 @@ function copiarUrl() {
 
 // ── URL DINÁMICA ──────────────────────────────────────────────────────────
 function generarUrl(id) {
-  const base = window.location.href.split('?')[0].split('#')[0];
+  const base = "https://wilmerjose545-commits.github.io/18-CARTAS/";
   return `${base}?carta=${id}`;
 }
-
 // ── MOSTRAR CARTA ─────────────────────────────────────────────────────────
 function mostrarCarta(id, modoPreview = false) {
   const carta = cartasData.find(c => c.id === id);
